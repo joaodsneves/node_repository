@@ -1,0 +1,41 @@
+# Ignorar dependências e cache do Node.js
+/node_modules
+/.pnp
+.pnp.js
+
+# Ignorar cobertura de testes
+/coverage
+
+# Ignorar build de produção
+/build
+
+# Ignorar arquivos diversos
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar arquivos específicos do backend
+/backend/node_modules
+/backend/npm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+
+# Ignorar arquivos de configuração do Docker
+db_data/                   # Volumes e dados de banco
+docker-compose.override.yml
+*.container                # Arquivos temporários de container
+docker-entrypoint-initdb.d/ # Scripts de inicialização do banco
+
+# Ignorar arquivos do VSCode
+.vscode/
+
+# Ignorar arquivos de logs e temporários
+*.log
+*.tmp
+*.swp
